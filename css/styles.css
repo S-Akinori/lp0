@@ -1,0 +1,392 @@
+/* テンプレート */
+.text-lg {
+    font-size: 2rem;
+}
+.text-md {
+    font-size: 1.5rem;
+}
+.text-purple {
+    color: rgb(40, 52, 130);
+}
+.bg-purple {
+    background-color: rgb(40, 52, 130);
+}
+.w-full {
+    width: 100%;
+}
+
+body {
+    font-family: "源ノ角ゴシック", "游ゴシック", 'ヒラギノ角ゴ ProN', "メイリオ", "MS Pゴシック", sans-serif;
+}
+
+.contact {
+    background-color: #838587;
+    color: #fff !important;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0.2rem 0;
+    margin: 0;
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.section {
+    padding: 2rem 0;
+}
+
+.d-sp {
+    display: none;
+}
+
+@media screen and (max-width:767px){
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .contact {
+        font-size: 1rem;
+    }
+
+    .d-pc {
+        display: none !important;
+    }
+
+    .d-sp {
+        display: block !important;
+    }
+}
+
+/* ここまで */
+
+/* header */
+header img {
+    width: 100%;
+}
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    transition: .3s;
+    background-color: #fff;
+    animation-duration: 1s;
+    transform: translateY(-20px);
+    opacity: 0;
+}
+.is-show {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.sp-img {
+    display: none;
+}
+
+@media screen and (max-width:767px){
+    .sp-img {
+        display: block;
+    }
+    .pc-img {
+        display: none;
+    }
+
+    .sp-header-top {
+        background-color: rgb(205, 206, 206);
+    }
+    .sp-header-top img {
+        width: 60%;
+        margin: 0 auto;
+    }
+    .fixed-header .sp-header-top {
+        display: none !important;
+    }
+}
+
+
+/* header - end */
+
+
+/* main */
+
+/* swiper */
+.swiper-container img {
+    width: 100%;
+}
+
+/* swiper end */
+
+/* introduction */
+.introduction {
+    background-color: #37BDEF;
+    color: #fff;
+}
+
+.introduction .container {
+    margin: auto;
+}
+
+.introduction .title {
+    font-weight: 900;
+}
+.introduction ul {
+    max-width: 800px;
+    list-style: none; 
+    padding-left: 0;
+    margin: 0 auto;
+}
+.introduction ul li {
+    font-size: 2rem;
+    font-weight: 500;
+    border-bottom: solid #fff;
+    padding-left: 2.5rem;
+    background: url(../img/list-icon.png) no-repeat;
+    background-size: 2rem;
+    background-position: left center;
+}
+
+@media screen and (max-width:767px){
+    .introduction div {
+        width: 90%;
+    }
+    .introduction ul {
+        padding-left: 0;
+    }
+    .introduction ul li {
+        font-size: 1rem;
+        padding-left: 1.5rem;
+        background-size: 1rem;
+    }
+}
+
+/* introduction end */
+
+/* service */
+.service {
+    background: url(../img/pc05.png) no-repeat;
+    background-position: right bottom;
+    /* background-size: cover; */
+}
+.service p {
+    color: rgb(40, 52, 130);
+    font-weight: bold;
+}
+
+.service h2 {
+    color: rgb(40, 52, 130);
+}
+.service .ads p {
+    font-weight: bold;
+    color: rgb(40, 52, 130);
+}
+
+.service0,
+.service1,
+.service2 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 0;
+    color: rgb(40, 52, 130);
+}
+
+.service0 {
+    background-color: rgb(142, 211, 247);
+}
+.service1 {
+    background-color: rgb(243, 186, 134);
+}
+.service2 {
+    background-color: rgb(154, 178, 138);
+}
+
+@media screen and (max-width:767px){
+    .service {
+        background: none;
+    }
+
+    .service .row p {
+        color: rgb(40, 52, 130);
+        margin: 0;
+        font-size: 0.8rem;
+    }
+
+    .service .img-container {
+        width: 50px;
+    }
+
+    .service .img-container img {
+        width: 100%;
+    }
+
+    .sp-homepage {
+        width: 100%;
+        text-align: center;
+        background-color: rgb(230, 160, 0);
+    }
+    .sp-lp {
+        width: 100%;
+        text-align: center;
+        background-color: rgb(142, 211, 247);
+    }
+}
+
+/* service end */
+
+/* price */
+.price {
+    background-color: #37BDEF;
+    color: #fff;
+}
+
+.price .container {
+    max-width: 800px;
+}
+
+.price .title {
+    font-size: 2.3rem;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.price .content {
+    /* max-width: 700px; */
+    margin: auto;
+}
+
+.price .content h3 {
+    text-align: center;
+    font-size: 2.5rem;
+    background-color: rgb(175, 29, 44);
+    padding: 0.2rem 0;
+    border-top: solid #fff;
+    border-bottom: solid #fff;
+}
+
+.price table {
+    background-color: rgb(40, 52, 130);
+    color: #fff;
+}
+
+.price .table th {
+    background-color: rgb(211, 237, 251);
+    font-weight: bold;
+    text-align: center;
+    color: rgb(40, 52, 130);
+}
+
+@media screen and (max-width:767px){
+    .price .title {
+        font-size: 1.2rem;
+    }
+    .price .content h3 {
+        font-size: 1.5rem;
+    }
+    .table td {
+        font-size: 0.8rem;
+    }
+}
+
+/* price end */
+
+/* flow */
+.section.flow h2.title {
+    /* max-width: 600px; */
+    background-color: #ff0000;
+    border-radius: 5px;
+    margin: auto;
+    color: #fff;
+}
+
+.flow .container {
+    max-width: 800px;
+}
+
+.section.flow p {
+    color: rgb(40, 52, 130);
+    font-weight: bold;
+    margin: 0;
+}
+.section.flow img {
+    text-align: center;
+}
+
+@media screen and (max-width:767px){
+    .flow .img-container {
+        width: 50%;
+    }
+    .flow img {
+        width: 100%;
+    }
+    .flow p {
+        font-size: 0.8rem;
+    }
+}
+/* flow end */
+
+/* faq */
+.section.faq {
+    background-color: #37BDEF;
+}
+
+
+.faq .content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.section.faq .title {
+    font-size: 6rem;
+    color: #fff;
+}
+
+.faq .question {
+    color: rgb(255, 226, 0);
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-left: 2.5rem;
+    text-indent: -2.5rem;
+}
+
+.faq .answer {
+    color: #fff;
+    font-weight: bold;
+    padding-left: 2rem;
+    text-indent: -2rem;
+}
+
+.faq .question::before {
+    content: 'Q ';
+    font-size: 2rem;
+}
+.faq .answer::before {
+    content: 'A ';
+    font-size: 2rem;
+}
+.faq .content ul {
+    padding-left: 0;
+    list-style: none;
+    border-top: 2px solid #838587;
+}
+
+@media screen and (max-width:767px){
+    .section.faq .title {
+        font-size: 4rem;
+        color: #fff;
+    }
+
+    .faq .question {
+        font-size: 1rem;
+    }
+    
+    .faq .answer {
+        font-size: 1rem;
+    }
+
+}
+
+/* faq end */
