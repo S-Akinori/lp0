@@ -238,7 +238,7 @@ header img {
     .service .row p {
         color: rgb(40, 52, 130);
         margin: 0;
-        font-size: 0.8rem;
+        font-size: 0.65rem;
     }
 
     .service .img-container {
@@ -321,7 +321,7 @@ header img {
         font-size: 0.6rem;
     }
     .price p {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 }
 
