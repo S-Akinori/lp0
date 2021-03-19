@@ -253,19 +253,21 @@ header img {
     }
 
     .service .ads img {
-        width: 72px;
-        height: 72px;
+        width: 50px;
+        height: 50px;
     }
 
     .sp-homepage {
         width: 100%;
         text-align: center;
         background-color: rgb(230, 160, 0);
+        font-size: 0.8rem;
     }
     .sp-lp {
         width: 100%;
         text-align: center;
         background-color: rgb(142, 211, 247);
+        font-size: 0.8rem;
     }
 }
 
