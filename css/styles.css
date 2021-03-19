@@ -65,7 +65,7 @@ body {
 
 /* header */
 header img {
-    width: 100%;
+    /* width: 100%; */
 }
 .fixed-header {
     position: fixed;
@@ -74,34 +74,47 @@ header img {
     z-index: 10;
     width: 100%;
     transition: .3s;
+    height: 60px;
     background-color: #fff;
+    box-shadow: 2px 2px 4px;
     animation-duration: 1s;
     transform: translateY(-20px);
     opacity: 0;
+}
+.fixed-header .pc0 {
+    /* width: 80%; */
+    height: 40px;
+}
+.fixed-header .pc1,
+.fixed-header .pc2 {
+    /* width: 80%; */
+    height: 55px;
 }
 .is-show {
     transform: translateY(0);
     opacity: 1;
 }
 
-.sp-img {
-    display: none;
-}
 
 @media screen and (max-width:767px){
-    .sp-img {
-        display: block;
+
+    header img {
+        width: 50%;
     }
-    .pc-img {
-        display: none;
+    header a img {
+        width: 100%;
     }
 
     .sp-header-top {
         background-color: rgb(205, 206, 206);
     }
-    .sp-header-top img {
-        width: 60%;
+    .fixed-header img {
+        width: 50%;
+        height: 55px;
         margin: 0 auto;
+    }
+    .fixed-header a img {
+        width: 100%;
     }
     .fixed-header .sp-header-top {
         display: none !important;
@@ -115,8 +128,20 @@ header img {
 /* main */
 
 /* swiper */
+.swipe {
+    background-color: #37BDEF;
+}
+.swiper-container {
+    width: 1200px;
+}
 .swiper-container img {
     width: 100%;
+}
+
+@media screen and (max-width:767px){
+    .swiper-container {
+        width: 100%;
+    }
 }
 
 /* swiper end */
@@ -132,7 +157,8 @@ header img {
 }
 
 .introduction .title {
-    font-weight: 900;
+    font-weight: bold;
+    font-size: 1.4rem;
 }
 .introduction ul {
     max-width: 800px;
@@ -223,6 +249,11 @@ header img {
         width: 100%;
     }
 
+    .service .ads img {
+        width: 72px;
+        height: 72px;
+    }
+
     .sp-homepage {
         width: 100%;
         text-align: center;
@@ -281,13 +312,16 @@ header img {
 
 @media screen and (max-width:767px){
     .price .title {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
     .price .content h3 {
         font-size: 1.5rem;
     }
     .table td {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
+    }
+    .price p {
+        font-size: 0.9rem;
     }
 }
 
@@ -323,7 +357,7 @@ header img {
         width: 100%;
     }
     .flow p {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
     }
 }
 /* flow end */
@@ -335,7 +369,7 @@ header img {
 
 
 .faq .content {
-    max-width: 700px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -357,6 +391,7 @@ header img {
     font-weight: bold;
     padding-left: 2rem;
     text-indent: -2rem;
+    /* font-size: 0.9rem; */
 }
 
 .faq .question::before {
@@ -381,10 +416,23 @@ header img {
 
     .faq .question {
         font-size: 1rem;
+        padding-left: 2rem;
+        text-indent: -2rem;
     }
     
     .faq .answer {
-        font-size: 1rem;
+        font-size: 0.8rem;
+        padding-left: 1.5rem;
+        text-indent: -1.5rem;
+    }
+
+    .faq .question::before {
+        content: 'Q ';
+        font-size: 1.5rem;
+    }
+    .faq .answer::before {
+        content: 'A ';
+        font-size: 1.5rem;
     }
 
 }
