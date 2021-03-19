@@ -158,7 +158,6 @@ header img {
 
 .introduction .title {
     font-weight: bold;
-    font-size: 1.4rem;
 }
 .introduction ul {
     max-width: 800px;
@@ -177,6 +176,9 @@ header img {
 }
 
 @media screen and (max-width:767px){
+    .introduction .title {
+        font-size: 1.4rem;
+    }
     .introduction div {
         width: 90%;
     }
