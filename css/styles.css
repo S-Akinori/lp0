@@ -423,8 +423,8 @@ header img {
 
     .faq .question {
         font-size: 1rem;
-        padding-left: 2rem;
-        text-indent: -2rem;
+        padding-left: 1.5rem;
+        text-indent: -1.5rem;
     }
     
     .faq .answer {
