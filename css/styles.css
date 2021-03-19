@@ -106,11 +106,11 @@ header img {
         width: 100%;
     }
     .fixed-header {
-        height: 45px;
+        height: 40px;
     }
     .fixed-header img {
-        max-height: 45px;
-        max-width: 225px;
+        max-height: 40px;
+        max-width: 200px;
     }
     
     .sp-header-top {
@@ -243,6 +243,7 @@ header img {
 @media screen and (max-width:767px){
     .service {
         background: none;
+        padding-bottom: 1rem;
     }
 
     .service .row p {
