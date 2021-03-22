@@ -242,7 +242,8 @@ header img {
 
 @media screen and (max-width:767px){
     .service {
-        background: none;
+        /* background: none; */
+        background-size: 150%;
         padding-bottom: 1rem;
     }
 
